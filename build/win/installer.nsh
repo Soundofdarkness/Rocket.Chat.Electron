@@ -1,6 +1,6 @@
 !ifndef BUILD_UNINSTALLER
   Function AddToStartup
-    CreateShortCut "$SMSTARTUP\Rocket.Chat+.lnk" "$INSTDIR\Rocket.Chat+.exe" ""
+    CreateShortCut "$SMSTARTUP\Laura.Chat.lnk" "$INSTDIR\Laura.Chat.exe" ""
   FunctionEnd
 
   ; Using the read me setting as an easy way to add an add to startup option
@@ -11,7 +11,7 @@
 
 !ifdef BUILD_UNINSTALLER
   Function un.AddAppData
-    RMDir /r "$APPDATA\Rocket.Chat+"
+    RMDir /r "$APPDATA\Laura.Chat"
   FunctionEnd
 
   ; Using the read me setting to add option to remove app data
@@ -28,6 +28,6 @@
 
 !macro customUnInstall
   ${IfNot} ${Silent}
-    Delete "$SMSTARTUP\Rocket.Chat+.lnk"
+    Delete "$SMSTARTUP\Laura.Chat.lnk"
   ${endif}
 !macroend

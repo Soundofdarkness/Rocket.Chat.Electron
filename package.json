@@ -1,8 +1,8 @@
 {
-  "name": "rocketchat",
-  "productName": "Rocket.Chat+",
-  "description": "Rocket.Chat Native Cross-Platform Desktop Application via Electron.",
-  "version": "2.11.0-develop",
+  "name": "laurachat",
+  "productName": "Laura.Chat",
+  "description": "Laura.Chat Native Cross-Platform Desktop Application via Electron.",
+  "version": "2.11.1-develop",
   "author": "Rocket.Chat Support <support@rocket.chat>",
   "copyright": "© 2018, Rocket.Chat",
   "homepage": "https://rocket.chat",
@@ -10,10 +10,10 @@
   "main": "app/background.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RocketChat/Rocket.Chat.Electron.git"
+    "url": "https://github.com/Soundofdarkness/Rocket.Chat.Electron.git"
   },
   "build": {
-    "appId": "chat.rocket",
+    "appId": "chat.laura",
     "files": [
       "app/**/*",
       "node_modules/**/*",
@@ -26,7 +26,7 @@
     ],
     "mac": {
       "bundleVersion": "24",
-      "helperBundleId": "chat.rocket.electron.helper",
+      "helperBundleId": "chat.laura.electron.helper",
       "category": "public.app-category.productivity",
       "target": [
         "dmg",
@@ -44,8 +44,8 @@
     },
     "appx": {
       "backgroundColor": "#2f343d",
-      "displayName": "Rocket.Chat",
-      "publisherDisplayName": "Rocket.Chat",
+      "displayName": "Laura.Chat",
+      "publisherDisplayName": "Laura.Chat",
       "languages": [
         "en-US",
         "en-GB",
@@ -55,7 +55,7 @@
     "linux": {
       "desktop": {
         "Categories": "GNOME;GTK;Network;InstantMessaging",
-        "StartupWMClass": "Rocket.Chat+",
+        "StartupWMClass": "Laura.Chat+",
         "MimeType": "x-scheme-handler/rocketchat"
       },
       "target": [
@@ -66,7 +66,7 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "RocketChat",
+        "owner": "Soundofdarkness",
         "repo": "Rocket.Chat.Electron",
         "vPrefixedTagName": false
       }
